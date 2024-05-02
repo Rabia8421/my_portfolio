@@ -1,0 +1,705 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+p{
+    /* color:#d9d9d9; */
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container{
+    width: 100%;
+}
+
+.sectionTitle{
+    color: black;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    animation-name: titleanim;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+}
+
+@keyframes titleanim{
+    
+    10%{
+        color: #4db8ff;
+    }
+    35%{
+        color: #008ae6,;
+    }
+    50%{
+        color: #007acc;
+    }
+    80%{
+        color: #005c99;
+    }
+    100%{
+        color: black;
+    }
+}
+/* header start here */
+    #topheader,#mainheader,#homeSection,#aboutSection,#skillSection,#serviceSection,#workSection,#contactSections{
+    padding: 0 50px;
+}
+
+#topheader{
+    color: white;
+    background-color:  #005c99;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+}
+
+#topheader p{
+    color: white;
+    display: inline;
+    margin: 5px;
+}
+
+#topheader svg{
+    margin: 0 5px;
+}
+
+#wach{
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2px;
+    
+}
+
+.button-div{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.button-div button{
+    color: white;
+    background-color: #005c99;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 2px 5px;
+    display: inline-block;   
+    width: 100px;
+    
+}
+
+#mainheader{
+    display: flex;
+    height: 100px;
+    color: white;
+    background-size: cover;
+}
+
+#navbar{
+    margin-left: auto;
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar li{
+    list-style: none;
+    padding-top: 20px;
+}
+
+#navbar a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    background-color: #005c99;
+}
+
+#toggolericon{
+    color:black;
+    background-color: #005c99;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#logo {
+    height: 50px;
+    width: 100%;
+    margin: auto  0px;
+}
+
+#logo img{
+    height: 50px;
+    width: 180px;
+    margin: 0px 10px 10px 0px;
+}
+
+#logo h6{
+    color: rgba(26, 19, 19, 0.555);
+    margin-left: 10px;
+}
+
+/* header end here */
+
+/* main start here */
+
+/* home section start here */
+#homeSection{
+    display: flex;
+    background-image: url('background-img.png');
+    background-size: cover;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.content {
+    margin-top: 45px;
+    margin-right: 10px 0 10px 10px;
+    width: 50%;
+}
+
+#hi{
+    font-size: 50px;
+    color: #005c99;
+    text-shadow: 2px 2px #005c99;
+    font-weight: lighter;
+    font-style: unset;
+    
+}
+
+.content span {
+    color:#005c99;
+    font-size: 25px;
+    font-weight: bold;
+    animation-name: text-anim;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-direction: left;
+    animation-timing-function: inherit;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text-anim{
+    10%{
+        color: #4db8ff;
+    }
+    35%{
+        color: #008ae6,;
+    }
+    70%{
+        color: #007acc;
+    }
+    100%{
+        color: #005c99;
+    }
+    
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img{
+    justify-content: center;
+}
+.img >img{
+    margin-left: 180px;
+    margin-top: 60px;
+    border: 2px dashed #005c99;
+    transform: rotate(5deg);
+}
+.img >img:hover{
+    transform: scale(1);
+}
+/* home section end here */
+
+
+/* about section start here */
+.about-contact-div1,.about-contact-div2{
+    width: 50%;
+}
+#aboutSection{
+    padding-top: 60px;
+}
+
+#about-sec-div1{
+    margin-top: 50px;
+    margin-bottom: 45px;
+    background-image: linear-gradient(to right, #66c2ff,#4db8ff,#007acc,#005c99,#004d80);
+    display: flex;
+}
+
+#about-sec-div1 div{
+    display: flex;
+    padding: 0 20px;
+    margin-top: 30px ;
+}
+
+#about-sec-div1 h1{
+    color: white;
+}
+#about-sec-div1 div>p{
+    color:#d9d9d9;
+    padding-left: 10px;
+}
+
+.experience{
+    margin-left: 100px;
+}
+
+.about-content-div1 img{
+    height: 250px;
+    width: 220px;
+    border: 2px dashed #005c99;
+    border-radius: 50%;
+    display: block;
+    margin: 80px 0 70px 0;
+    animation-name: image-anim;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes image-anim{
+    25%{
+        margin-left: 120px;
+    }
+    50%{
+        margin-left: 250px;
+    }
+    100%{
+        margin-left: 400px;
+    
+    }
+    
+}
+
+.about-content-div2{
+    padding-top: 10px;
+    text-align: center;
+}
+.about-content-div2 h3{
+    color: #005c99;
+    animation-name: aboutitleanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+}
+
+@keyframes aboutitleanim{
+    10%{
+        color: #4db8ff;
+    }
+    35%{
+        color: #008ae6,;
+    }
+    50%{
+        color: #007acc;
+    }
+    80%{
+        color: #005c99;
+    }
+    100%{
+        color: black;
+    }
+}
+.about-content-div2 p{
+    color: rgba(0, 0, 0, 0.753);
+    padding-top: 10px;
+}
+#togglebtn{
+    height: 35px;
+    width: 100px;
+    color: #005c99;
+    border: 2px solid #005c99;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 2px 5px;
+}
+#togglebtn:hover{
+    box-shadow:2px 2px #005c99;
+}
+
+#toggle-collaps{
+    color: rgba(0, 0, 0, 0.753);
+    padding:  10px 0 59px 0;
+}
+/* about section end here */
+
+/* skill section start here */
+#skillSection{
+    display: grid;
+    grid-template-columns:  auto auto;
+    padding: 0px  50px 60px 50px;
+}
+#skillSection div{
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #1a6ea7;
+}
+#skillSection h3{
+    color: white;
+    display: inline-block;
+}
+
+#skillSection p{
+    color: white;
+    font-size: 30px;
+}
+
+#skillSection span{
+    color: white;
+    font-size: 18px;
+}
+
+#skillsec-gradient{
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    animation-name: skillgradient;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: left;
+    animation-iteration-count: infinite;
+}
+@keyframes skillgradient{
+    10%{
+        background-color: #6bc1fa;
+    }
+    35%{
+        background-color: #4db8ff;
+    }
+    50%{
+        background-color: #0994f0;
+    }
+    70%{
+        background-color: #007acc;
+    }
+    100%{
+        background-color: #005c99;
+    }
+    
+}
+
+/* skill section end here */
+
+
+/* service section start here */
+#serviceSection {
+padding: 30px  50px 60px 50px;
+}
+
+#serviceSection > div{
+    display: flex;
+    padding: 10px 5;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+#serviceSection span{
+    color: #005c99;
+}
+#serviceSection div> h4{    
+    padding-left: 10px;
+    width: 30%;
+}
+#serviceSection p{
+    width: 70%;
+    margin-left: auto;
+    padding: 10px 10px 10px 50px;
+}
+.web-design{
+    background-image: linear-gradient(to right, #66c2ff,#4db8ff,#007acc,#005c99,#004d80);
+}
+.web-design p{
+    color: #d9d9d9;
+}
+/* service section end here */
+
+
+/* work section start here */
+#workSection{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 100px 50px 100px;
+}
+#workSection div{
+    margin: 10px;
+}
+#workSection div > img{
+    width: 100%;
+    height: 700px;
+    border: 2px solid black;
+}
+
+#workSection div > img:hover{
+    transform: scalex(1.1);
+}
+/* work section end here */
+
+/* testemonial start here */
+#testimonial{
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#testimonial >.card{
+    border: 2px solid black;
+}
+#testimonial >.card:hover{
+    transform: scale(1.1);
+}
+
+#testimonial div > img{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+#testimonial p{
+    color: rgb(41, 40, 40);
+    padding: 0 10px;
+}
+
+#testimonial h3{
+    color: darkorange;
+}
+.middle-card{
+    margin: 0px 10px;
+}
+/* testemonial end here */
+
+/* contact section start here */
+#contactSection{
+    color: white;
+    background-color: gray;
+    display: flex;
+    padding: 40px 50px 60px 50px ;
+}
+
+#contact{
+    width: 40%;
+}
+#contact div{
+    margin: 25px 0px;
+}
+
+#contact a{
+    color:#d9d9d9;
+    text-decoration: none;
+}
+
+#contact svg{
+    color: #005c99;
+    align-items: center;
+    margin: 10px;
+}
+#contact span{
+    padding-left: 50px;
+    font-size: small;
+}
+
+#contactForm{
+    width: 50%;
+    margin-left: 20px;
+}
+#contactForm div{
+    margin:20px 0;
+}
+#contactForm input{
+    color: #d9d9d9;
+    border: 2px solid #005c99;
+    width: 100%;
+}
+
+#contactForm textarea{
+    border: 2px solid #005c99;
+}
+/* contact section end here */
+/* main end here */
+
+/* footer start here */
+#footer1{
+    display: flex;
+    color: #005c99 !important;
+    background-color:black;
+    text-align: center;
+    padding: 30px 50px; 
+}
+#footer1 a{
+    color:#005c99;
+    display: block;
+    margin-left: auto;
+    animation-name: iconanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: inherit;
+}
+
+@keyframes iconanim{
+    10%{
+        color: #4db8ff;
+    }
+    35%{
+        color: #008ae6;
+    }
+    70%{
+        color: #007acc;
+    }
+    100%{
+        color: #005c99;
+    }
+}
+#footer1 a:hover{
+    transform: scale(1.3);
+}
+
+/* footer end here */
+
+
+
+/* media query start here */
+@media screen and (max-width: 600px) {
+    .sectionTitle{
+        padding: 10px;
+    }
+    /* topheader start here */
+    #topheader{
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #wach{
+        margin-left: 16px;
+        margin-top: 30px;
+    }
+    .button-div{
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    /* mainheader start here */
+    #mainheader{
+        height: auto;
+    }
+    
+    #toggolericon{
+        color: #005c99;
+        background-color: #005c99;
+        height: 40px;
+        width: 40px;
+        margin: 10px 0px 10px 10px;
+        padding: 0px;
+        margin: 30px auto;
+    }
+    
+    #logo img{
+        height: 60px;
+        width: 90%;
+        margin: auto  0px;
+    }
+    /* topheader start here */
+    .button-div{
+        margin-left: 30px;
+    }
+
+    /* home section start here */
+    #homeSection{
+        flex-direction: column;
+    }
+    .img >img{
+        margin-left: 20px;
+        width: 90%;
+    }
+
+    /* about section start here */
+    #about-sec-div1{
+        display: block;
+        padding-top: 80px;
+    }
+    #about-sec-div1 div{
+        padding: 10px 0;
+        margin-top: 30px ;
+    }
+    .content {
+        width: 100%;
+    }
+    
+    .about-contact-div1,.about-contact-div2{
+        width: 100%;
+    }
+    .experience{
+        margin-left: 10px;
+    }
+
+    /* service section start here */
+    #serviceSection div{
+        display: block;
+        margin-top: 30px;
+    }
+    #serviceSection p{
+        width: 100%;
+        padding-left: 10px;
+    }
+    #serviceSection h4{
+        width: 100%;
+        
+    }
+
+
+    /* worksection start here */
+    #workSection{
+        display: block;
+    }
+    #workSection img{
+        width: 100%;
+    }
+
+    /* testimionial section start here */
+    #testimonial{
+        display: block;
+    }
+    .middle-card{
+        margin: 10px 0px;
+    }
+
+    /* contacat section start here */
+    #contactSection{
+        flex-direction: column;
+    }
+    #contactForm{
+        width: 100%;
+        margin-left: 0px;
+    }
+
+}
